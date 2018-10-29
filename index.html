@@ -8,8 +8,8 @@
     Case Problem 4
     
     Park City Gazette
-    Author: 
-    Date:   
+    Author: Patrick M Capuano
+    Date:   10/28/18
 
     Filename: pcg_front.html
    -->
@@ -20,12 +20,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pcg_paper.css">
 
+   <!-- Meta data and the link to the CSS page were added in the <head> element right here to build
+        around the skeleton of this HTML.  -->
+
 </head>
 
 <body>
 
     <header>
         <img src="pcglogo.jpg" alt="">
+
+        <!-- The main image of the site is put at the very top with due promenence and has the rest of
+        the page's content floated below it. -->
+
         <nav>
             <li> <a href=""> Home Page</a></li>
             <li> <a href="">News</a></li>
@@ -52,38 +59,46 @@
             <li> <a href="">Subscriptions</a></li>
             <li> <a href="">Contact Us</a></li>
         </nav>
+
+        <!-- The nav element features the content from "links2.txt" and has it layout vertically to
+        the left side of the page, while still having page breaks similar to how it was in its contents. -->
+
     </header>
 
-    <h1 class="main">
-        ========
-        Stories Inside
-        ========
-    </h1>
+    <h1 class="main">Stories Inside</h1>
+    <h1 class="main">========</h1>
+
+    <!-- The "Story Inside" header is given a series of "=" like it was in the "links1.txt" and has itself
+    above the rest of the list of links to the articles in the site. -->
 
     <div class="row1">
-        <div class="column1"> <a href="">Complete Marathon Results</a> </div>
-        <div class="column2"> <a href="">National Park Acquires Land</a> </div>
+        <div class="column1"> <a href="">:Complete Marathon Results:</a> </div>
+        <div class="column2"> <a href="">:National Park Acquires Land:</a> </div>
     </div>
 
     <div class="row2">
-        <div class="column1"> <a href="">School Board Election Results</a> </div>
-        <div class="column2"> <a href="">Spending Referendum Defeated </div>
+        <div class="column1"> <a href="">:School Board Election Results:</a> </div>
+        <div class="column2"> <a href="">:Spending Referendum Defeated:</div>
     </div>
 
     <div class="row3">
-        <div class="column1"> <a href="">Graduation Awards</a> </div>
-        <div class="column2"> <a href="">New Highway Proposed </div>
+        <div class="column1"> <a href="">:Graduation Awards:</a> </div>
+        <div class="column2"> <a href="">:New Highway Proposed:</div>
     </div>
 
     <div class="row4">
-        <div class="column1"> <a href="">Camping Tips</a> </div>
-        <div class="column2"> <a href="">Cougar Sightings Increase</a> </div>
+        <div class="column1"> <a href="">:Camping Tips:</a> </div>
+        <div class="column2"> <a href="">:Cougar Sightings Increase:</a> </div>
     </div>
 
     <div class="row5">
-        <div class="column1"> <a href="">Editorials</a> </div>
-        <div class="column2"> <a href="">Park City Profile</a> </div>
+        <div class="column1"> <a href="">:Editorials:</a> </div>
+        <div class="column2"> <a href="">:Park City Profile:</a> </div>
     </div>
+
+<!-- This grid here consist of all the info links put in "links2.txt" and has them order in a flip-flop
+style back in forth in the space next to the navigation tab. Each row is assinged an appropraite class
+number as well as the columns as well to be used in the CSS page for style rules. -->
 
     <br>
     <br>
@@ -92,9 +107,15 @@
     <br>
     <hr>
 
+    <!-- A large series of page breaks are implemented here alongside a horizontal break to make a line
+    seperating the main page content from all of the above hyperlinks, keeping the page organized. -->
+
     <section class="story1">
 
         <h2 class.="heading"> Local Woman Wins Marathon <img src="blake.jpg" alt=""> </h2>
+
+        <!-- "blake.jpg" was floated the right of this story here as she is part of the story described
+        in the surrounding bullet points. -->
 
         <ul>
             <li>
@@ -170,7 +191,11 @@
 
     <section class="story4">
 
-        <h2 class.="heading">If You Encounter a Cougar </h2>
+        <h2 class.="heading">If You Encounter a Cougar <img src="cougar-portrait.jpg"alt=""> </h2>
+
+        <!-- An image of a cougar was added in to help readers better understand what danger to look out
+        for when being described the proper procedures to defend themselves from danger. -->
+
         <ul>
             <li>
                 <p> Stop, stand tall, and don't run. A cougar's instinct is to chase. </p>
@@ -191,6 +216,10 @@
 
     </section>
 
+    <!-- All storys were featured in there own block of sorts with the heading of each being more imparent,
+    followed by each line being an unordered list of bullet points, similar to how they were laid out in
+    each "story.txt" file. -->
+
     </article>
 
     <footer>
@@ -199,6 +228,9 @@
         Estes Park, CO 80511
         1 (800) 555-2918
     </footer>
+
+    <!-- Finally, the footer was neturally spread out on the bottom of the page as contact information
+    for any reader wanting the info. -->
 
 </body>
 

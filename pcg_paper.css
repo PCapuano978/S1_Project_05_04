@@ -15,15 +15,6 @@
 
 */
 
-/* 
-• Use of the display property 
-• Application of width and height style properties 
-• Floated elements and cleared elements 
-• A container element with a style rule so that it expands around its floated content 
-• Defined margin and padding spaces as well as maximum and minimum widths 
-• An example of relative or absolute positioning
- */
-
 /* Universal Styles */
 
 html {
@@ -35,12 +26,20 @@ html {
     min-height: 100%;
 }
 
+/* Universally applied to all the elements is an automatic margin, the postiion being relative, a backgroud
+that has a graindiant color going from light brown to dark brown, a max and min width of 640 and 960 pixels
+respectively and a minimum height of 100%; */
+
 body {
     background-color: rgb(70, 51, 0);
     border-style: inset;
     border-color: antiquewhite;
     border-width: .25em;
 }
+
+/* The background color of the body is of a very dark brown; complimented by white as a border that also
+has an inset style with .25 em in length. */
+
 
 /* Header & Nav Styles */
 
@@ -52,9 +51,13 @@ header img {
     border-color: brown;
 }
 
+/* The header image takes up the top with 99% of the width (because 100% slighly goes off). It is then
+floated to the left and has an inset, brown border with .25em in length. */
+
 nav {
+    list-style-type: none;
     font-size: 1em;
-    padding: 0em .5em;
+    padding: .36em .5em;
     clear: both;
     content: "";
     float: left;
@@ -65,13 +68,30 @@ nav {
     background-color: saddlebrown;
 }
 
+/* The nav has the following style rules.
+1. The removal of side dots that accompany unordered list by default on browsers.
+2. A font size of 1em.
+3. Padding which has a horizontal amount of .5 em and a vertical amount of .36em (for the horizontal break).
+4. Floated elements on both sides cleared.
+5. Font family priority arrangment that goes "'Courier New', Courier", and "monospace".
+6. A border style of "inset".
+7. Border Color of "brown".
+8. Border width of .15em.
+9. A nav background of "Saddlebrown" that compliments both the white text and reddish border.
+*/
+
 nav a:visited {
     color: azure;
 }
 
+/* Hyperlinks that are to be visited or not are given a color of "azure". */
+
 nav a:hover {
     color: black;
 }
+
+/* When said links are hovered however, they give a very contrasting color of "black". */
+
 
 /* Grid Based Styles */
 
@@ -80,13 +100,28 @@ div {
     outline: 2em;
     clear: right;
     font-size: 1.09em;
-    content: "";
     text-align: center;
 }
+
+/* Div style rules include... 
+1. A long prority font family order of "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana", and finally "sans-serif;".
+2. A grid outline of 2em;
+3. Clear of floated elements to the right only;
+4. A specific font size of 1.09em.
+5. Text aligned to the center.
+*/
+
+div a {
+    text-decoration: none;
+}
+
+/* All div hyperlinks have their text decoration removed of underlines. */
 
 div.row {
     margin: 0 auto;
 }
+
+/* All divs with the "row" class have no vertical magin with also an automatic horizontal margin. */
 
 .column1 {
     margin-right: 1em;
@@ -94,39 +129,59 @@ div.row {
     width: 50%;
 }
 
+/* All elements with a class of "column1" have their right margin increased by 1em, are floated to the left,
+and have a width of 50%. */
+
 .column2 {
     margin-left: 1em;
     float: right;
     width: 50%;
 }
 
+/* All elements with a class of "column2" their left margin increased by 2em, are floated to the right,
+and have a width of 50%. */
+
 div a:visited {
     color: burlywood;
 }
+
+/* All div hyperlinks are a color of "burlywood", wether they are visisted or not. */
 
 div a:hover {
     color: brown;
 }
 
+/* When said hyperlinks are hovered however, they change their color to a very different shade of "brown". */
+
 /* Section Styles */
 
 h1.main {
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3em;
     text-align: center;
     color: azure;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* h1 elements with a "main" class...
+ 1. Are given a font-family order of "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS'", and "sans-serif".
+ 2. A font size of 3em.
+ 3. Text alignment to the center.
+ 4. A color fo "azure", which works with the themeing of other elements.
+  */
 
 h2.heading {
     size: 7em;
     float: left;
 }
 
+/* All h2 elements with a class of "heading" that serve as the story headers have a size of 7em and
+are floated to the left. */
+
 section h2 {
     text-decoration: underline;
 }
+
+/* h2 elements nested within the section tag have their text decoration set to have an underline. */
 
 section {
     color: rgb(102, 41, 0);
@@ -140,19 +195,39 @@ section {
     border-width: .25em;
 }
 
+/* All elements in the section group have...
+ 1. A color value of "102, 41, 0".
+ 2. A margin all around of 2.5em.
+ 3. Font family order of "Cambria, Cochin, Georgia, Times, 'Times New Roman'", and "serif".
+ 4. Padding all around of 0.5em.
+ 5. A background color of "ivory" that goes well with the dark brown color of the body's background.
+ 6. A text alignment to the left.
+ 7. A border that has an inset style being brown with a width of .25em.
+   */
+
 section::first-letter {
     font-size: 1.5em;
 }
 
+/* The first letter of every section tag is set to have an increased font size of 1.5 em comparativily. */
+
 h2 img {
     float: right;
     margin-right: 1em;
-    width: 2.5em;
-    height: 2.5em;
+    width: 3em;
+    height: 3em;
     border: .1em;
     border-style: inset;
     border-color: aqua
 }
+
+/* All heading images within the section elements are...
+1. Floated to the right.
+2. Given a right margin of 1em.
+3. A width of 3em.
+4. A height of 3em.
+5. Given an inset styled border with an "auqa" color of .1em width.
+*/
 
 /* Footer Styles */
 
@@ -161,3 +236,6 @@ footer {
     clear: both;
     color: bisque;
 }
+
+/* The page footer has its text allinged to the center, both sides cleared of floated content and a color
+of "bisque". */
