@@ -20,14 +20,14 @@
 html {
     margin: auto;
     position: relative;
-    background-image: linear-gradient(rgb(255, 182, 87), saddlebrown);
+    background-image: linear-gradient(rgb(119, 117, 0), saddlebrown);
     min-width: 640px;
     max-width: 960px;
     min-height: 100%;
 }
 
 /* Universally applied to all the elements is an automatic margin, the postiion being relative, a backgroud
-that has a graindiant color going from light brown to dark brown, a max and min width of 640 and 960 pixels
+that has a graindiant color going from dark green to dark brown, a max and min width of 640 and 960 pixels
 respectively and a minimum height of 100%; */
 
 body {
