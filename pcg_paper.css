@@ -235,7 +235,8 @@ footer {
     text-align: center;
     clear: both;
     color: bisque;
+    padding: .5em;
 }
 
-/* The page footer has its text allinged to the center, both sides cleared of floated content and a color
-of "bisque". */
+/* The page footer has its text allinged to the center, both sides cleared of floated content, 
+padding all around of a half em, and a color of "bisque". */
